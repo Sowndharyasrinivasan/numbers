@@ -3,16 +3,16 @@ public class Factorial {
    
     public static void main(String[] args) {
        int n,i;
-       int fact=1;
+       int f=1;
        
         Scanner sc=new Scanner(System.in);
          System.out.println("enter the factorial no:");
         n=sc.nextInt();
        
         for(i=1;i<=n;i++)
-               fact=fact*i;
+               f=f*i;
         {
-            System.out.println("the factorial"+n+ "is"+fact);
+            System.out.println("the factorial"+n+ "is"+f);
         }
     }
     }

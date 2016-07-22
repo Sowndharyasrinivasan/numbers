@@ -4,9 +4,11 @@ public class coinremoval
  {
     public static void main(String[] args)
     {
-        char c1,c2,c3;int pos;
-        StringBuilder s = new StringBuilder("THHTHHHT");
-        while(!"________".equals(s)) {
+        char c1,c2,c3;
+        int pos;
+        StringBuilder s = new StringBuilder("saaasaasas");
+        while(!" ".equals(s)) 
+          {
             System.out.println(s);
 
 
@@ -38,21 +40,21 @@ public class coinremoval
 
                     switch (c1) {
                         case 'H':
-                            s.setCharAt(getpos((pos - 1), s), 'T');
+                            s.setCharAt(getpos((pos - 1), s), 's');
                             break;
                         case 'T':
-                            s.setCharAt(getpos((pos - 1), s), 'H');
+                            s.setCharAt(getpos((pos - 1), s), 'a');
                             break;
                     }
                     switch (c2) {
                         case 'H':
-                            s.setCharAt(getpos(pos + 1, s), 'T');
+                            s.setCharAt(getpos(pos + 1, s), 'a');
                             break;
                         case 'T':
-                            s.setCharAt(getpos(pos + 1, s), 'H');
+                            s.setCharAt(getpos(pos + 1, s), 's');
                             break;
                     }
-                    s.setCharAt(pos, '_');
+                    s.setCharAt(pos, ' ');
                 }
 
             }
